@@ -70,13 +70,11 @@ optimize with ```system``` and output options with ```verbose```.
 
 The method ```Tasks.runtask``` computes one the following tasks: 
 
-+----------------------+--------------+-----------------------------------------------------------------+
-| Task                 | Key          | Description                                                     |
-+======================+==============+=================================================================+
-| Single point energies| ```Energy```   | Calculate the RHF energy and update it in an attibute in system |
-+----------------------+--------------+-----------------------------------------------------------------+
-| Optimization         | ```Opt```      |   Optimize a given parameter and update the basis set in system |
-+----------------------+--------------+-----------------------------------------------------------------+
+
+| Task          | Key         | Description  |
+| ------------- |:-------------:| -----:|
+| Single point energies| ```Energy``` | Calculate the RHF energy and update it in an attibute in system |
+| Optimization  | ```Opt``` |   Optimize a given parameter and update the basis set in sytem|
 
 
 ## Single point calculation
@@ -117,15 +115,11 @@ For example:
 ```
 where ```argnum``` recieves a list with the parameters to optimize with the following convention:
 
-+--------------------------+------------+
-| Parameter                | ```argnum``` |
-+==========================+============+
-| Exponents                |  0         | 
-+--------------------------+------------+
-| Contraction coefficients |  1         |
-+--------------------------+------------+
-| Gaussian centers         |  2         |
-+--------------------------+------------+
+| Parameter          | ```argnum```    |
+| ------------- |:-------------:|
+| Width | 0 | 
+| Contraction coefficients | 1 |
+| Gaussian centers | 2 |
 
 For example, we can optimize the atomic centered basis function with respect of their widths and contraction
 coefficients in the following way.
